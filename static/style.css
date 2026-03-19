@@ -174,8 +174,19 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#team-highlight .row {
+#team-highlight .team-members-grid {
+    margin-top: 0.5rem;
+    margin-left: 0;
+    margin-right: 0;
+    gap: 2rem;
     align-items: stretch;
+    justify-content: center;
+}
+
+#team-highlight .team-member-col {
+    flex: 0 1 260px;
+    max-width: 260px;
+    padding: 0;
 }
 
 .team-member-card img {
@@ -286,5 +297,13 @@ h1, h2, h3, h4, h5, h6 {
 
     .hero-image-container {
         margin-top: 2rem;
+    }
+
+    #team-highlight .team-members-grid {
+        gap: 1.25rem;
+    }
+
+    #team-highlight .team-member-col {
+        flex-basis: 260px;
     }
 }
